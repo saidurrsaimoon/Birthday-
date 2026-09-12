@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday Nadiya 🎂</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Floating Background -->
+  <div class="background-effects">
+    <span>✦</span>
+    <span>✧</span>
+    <span>⋆</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>⋆</span>
+    <span>✦</span>
+    <span>✧</span>
+  </div>
+
+  <!-- PASSWORD SCREEN -->
+  <section id="lockScreen" class="lock-screen">
+
+    <div class="lock-card">
+
+      <div class="lock-icon">🎁</div>
+
+      <p class="small-label">A little surprise is waiting...</p>
+
+      <h1>For Nadiya 💫</h1>
+
+      <p class="lock-text">
+        This little birthday world is protected.
+        <br>
+        Only Nadiya knows the secret.
+      </p>
+
+      <div class="password-box">
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter password"
+          autocomplete="off"
+        >
+
+        <button id="showPassword">👁</button>
+      </div>
+
+      <button id="unlockBtn" class="main-btn">
+        Open the Surprise ✨
+      </button>
+
+      <p id="passwordMessage" class="password-message"></p>
+
+      <p class="hint">
+        Hint: It's a special name + number 😉
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAIN WEBSITE -->
+  <main id="mainSite" class="hidden">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+      <div class="logo">
+        N<span>♡</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#birthday">Birthday</a>
+        <a href="#fun">Fun</a>
+        <a href="#letter">Letter</a>
+      </div>
+
+      <button id="themeBtn" class="theme-btn">☀️</button>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero section">
+
+      <!-- Balloons -->
+      <div class="balloons">
+        <span class="balloon b1">🎈</span>
+        <span class="balloon b2">🎈</span>
+        <span class="balloon b3">🎈</span>
+        <span class="balloon b4">🎈</span>
+        <span class="balloon b5">🎈</span>
+      </div>
+
+      <div class="hero-content reveal">
+
+        <div class="birthday-badge">
+          ✨ A Special Day ✨
+        </div>
+
+        <p class="hero-small">
+          03 • 03 • 2007
+        </p>
+
+        <h1>
+          HAPPY<br>
+          <span>BIRTHDAY</span><br>
+          NADIYA 🎂
+        </h1>
+
+        <p class="hero-description">
+          Today isn't just another day.
+          <br>
+          It's the day Nadiya came into this world
+          and made it a little more interesting. ✨
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#birthday" class="main-btn">
+            Let's Celebrate 🎉
+          </a>
+
+          <button id="giftBtn" class="outline-btn">
+            Open a Gift 🎁
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="scroll-down">
+        <span>Scroll for your surprise</span>
+        <b>↓</b>
+      </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY COUNTERS -->
+    <section id="birthday" class="section birthday-section">
+
+      <div class="section-heading reveal">
+
+        <p class="section-label">
+          THE SPECIAL DATE
+        </p>
+
+        <h2>
+          Born on <span>03 March 2007</span> 🎂
+        </h2>
+
+        <p>
+          And look how much time has passed since that day...
+        </p>
+
+      </div>
+
+
+      <!-- AGE COUNTER -->
+      <div class="counter-card reveal">
+
+        <div class="counter-title">
+          ⏳ Time since Nadiya was born
+        </div>
+
+        <div class="counter-grid">
+
+          <div class="counter-box">
+            <strong id="years">00</strong>
+            <span>Years</span>
+          </div>
+
+          <div class="counter-box">
+            <strong id="days">00</strong>
+            <span>Days</span>
+          </div>
+
+          <div class="counter-box">
+            <strong id="hours">00</strong>
+            <span>Hours</span>
+          </div>
+
+          <div class="counter-box">
+            <strong id="minutes">00</strong>
+            <span>Minutes</span>
+          </div>
+
+          <div class="counter-box">
+            <strong id="seconds">00</strong>
+            <span>Seconds</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- NEXT BIRTHDAY -->
+      <div class="next-birthday reveal">
+
+        <div class="cake-mini">🎂</div>
+
+        <div>
+          <p>COUNTDOWN TO THE NEXT BIRTHDAY</p>
+
+          <h3 id="turningText">
+            Loading...
+          </h3>
+        </div>
+
+        <div class="countdown">
+
+          <div>
+            <b id="nextDays">00</b>
+            <small>Days</small>
+          </div>
+
+          <div>
+            <b id="nextHours">00</b>
+            <small>Hours</small>
+          </div>
+
+          <div>
+            <b id="nextMinutes">00</b>
+            <small>Minutes</small>
+          </div>
+
+          <div>
+            <b id="nextSeconds">00</b>
+            <small>Seconds</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CAKE -->
+    <section class="cake-section section">
+
+      <div class="section-heading reveal">
+
+        <p class="section-label">MAKE A WISH</p>
+
+        <h2>
+          One cake. One wish. <span>Zero calories. 😌</span>
+        </h2>
+
+      </div>
+
+      <div class="cake-area reveal">
+
+        <div class="cake">
+
+          <div class="candle">
+            <div class="flame"></div>
+          </div>
+
+          <div class="cake-top"></div>
+
+          <div class="cake-layer layer-one">
+            <span>•</span>
+            <span>•</span>
+            <span>•</span>
+            <span>•</span>
+          </div>
+
+          <div class="cake-layer layer-two"></div>
+
+          <div class="cake-bottom"></div>
+
+        </div>
+
+        <p id="wishText">
+          Make a wish before the candle goes out... ✨
+        </p>
+
+        <button id="wishBtn" class="main-btn">
+          Make a Wish ✨
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- FUN SECTION -->
+    <section id="fun" class="section fun-section">
+
+      <div class="section-heading reveal">
+
+        <p class="section-label">IMPORTANT BIRTHDAY BUSINESS</p>
+
+        <h2>
+          Birthday Rules 😌
+        </h2>
+
+        <p>
+          Please read these very seriously.
+        </p>
+
+      </div>
+
+
+      <div class="fun-grid">
+
+        <div class="fun-card reveal">
+
+          <div class="fun-icon">🎂</div>
+
+          <h3>Rule #01</h3>
+
+          <p>
+            Cake must be eaten.
+            Not eating cake on a birthday is
+            scientifically suspicious.
+          </p>
+
+        </div>
+
+
+        <div class="fun-card reveal">
+
+          <div class="fun-icon">😂</div>
+
+          <h3>Rule #02</h3>
+
+          <p>
+            Today you are officially allowed
+            to ignore boring people.
+          </p>
+
+        </div>
+
+
+        <div class="fun-card reveal">
+
+          <div class="fun-icon">🎁</div>
+
+          <h3>Rule #03</h3>
+
+          <p>
+            Gifts are mandatory.
+            Complaints about gifts are forbidden.
+          </p>
+
+        </div>
+
+
+        <div class="fun-card reveal">
+
+          <div class="fun-icon">✨</div>
+
+          <h3>Rule #04</h3>
+
+          <p>
+            Smile more, worry less,
+            and enjoy your special day.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="fun-buttons reveal">
+
+        <button id="randomBtn" class="main-btn">
+          Give Me a Birthday Message 🎲
+        </button>
+
+        <button id="runawayBtn" class="outline-btn runaway">
+          Don't Press This 😈
+        </button>
+
+      </div>
+
+      <div id="randomMessage" class="random-message">
+        Click the button above 👆
+      </div>
+
+    </section>
+
+
+    <!-- LETTER -->
+    <section id="letter" class="section letter-section">
+
+      <div class="section-heading reveal">
+
+        <p class="section-label">A LITTLE LETTER</p>
+
+        <h2>
+          Dear <span>Nadiya</span> 💌
+        </h2>
+
+      </div>
+
+
+      <div class="letter-card reveal">
+
+        <div class="letter-decoration">✦</div>
+
+        <div class="letter-content">
+
+          <p>
+            Happy Birthday, Nadiya! 🎂
+          </p>
+
+          <p>
+            Wishing you a year filled with good moments,
+            peaceful days, lots of laughter, and plenty
+            of reasons to smile.
+          </p>
+
+          <p>
+            May the things you hope for slowly find
+            their way to you, and may every new year
+            of your life bring something worth remembering.
+          </p>
+
+          <p>
+            Keep enjoying the little things,
+            keep laughing at the random things,
+            and most importantly — enjoy your day.
+          </p>
+
+          <p class="letter-final">
+            Have an amazing birthday! ✨🎂🎈
+          </p>
+
+        </div>
+
+        <div class="letter-decoration bottom">
+          ♡ ✦ ♡
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final-section section">
+
+      <div class="final-card reveal">
+
+        <div class="final-emoji">
+          🎂
+        </div>
+
+        <p class="section-label">
+          THIS IS YOUR MOMENT
+        </p>
+
+        <h2>
+          Happy Birthday,
+          <span>Nadiya!</span> 🎉
+        </h2>
+
+        <p>
+          Now stop reading and start celebrating. 😂
+        </p>
+
+        <button id="celebrateBtn" class="main-btn big-btn">
+          🎉 CELEBRATE 🎉
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOCIAL -->
+    <footer>
+
+      <div class="footer-logo">
+        N<span>♡</span>
+      </div>
+
+      <p>
+        Made with lots of effort, a little madness,
+        and birthday vibes. ✨
+      </p>
+
+      <div class="socials">
+
+        <a
+          href="https://www.facebook.com/Saidur.R.Saimoon"
+          target="_blank"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://wa.me/qr/3ZWP6IYVEFZGP1"
+          target="_blank"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+      <small>
+        © 2026 Birthday Surprise
+      </small>
+
+    </footer>
+
+  </main>
+
+
+  <!-- GIFT MODAL -->
+  <div id="giftModal" class="modal">
+
+    <div class="modal-card">
+
+      <button id="closeModal" class="close-modal">
+        ×
+      </button>
+
+      <div class="modal-gift">🎁</div>
+
+      <h2>
+        Surprise! 🎉
+      </h2>
+
+      <p id="giftMessage">
+        Loading your birthday surprise...
+      </p>
+
+      <button id="anotherGift" class="main-btn">
+        Another One 😂
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    ✨ Birthday vibes activated!
+  </div>
+
+
+  <!-- Confetti Container -->
+  <div id="confetti"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+        </html>
